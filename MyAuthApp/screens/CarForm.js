@@ -1,13 +1,14 @@
 // screens/CarForm.js
 import React, { useState } from 'react';
+import * as Animatable from 'react-native-animatable';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert, Platform, ScrollView } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
 const BASE_URL = Platform.select({
-  android: 'http://10.0.2.2:3001',
-  ios: 'http://localhost:3001',
-  web: 'http://localhost:3001',
-  default: 'http://localhost:3001',
+  android: 'http://192.168.1.110:3001',
+  ios: 'http://192.168.1.110:3001',
+  web: 'http://192.168.1.110:3001',
+  default: 'http://192.168.1.110:3001',
 });
 
 export default function CarForm() {
@@ -187,33 +188,38 @@ export default function CarForm() {
       {/* Buttons */}
       <View style={s.buttonContainer}>
         {mode === 'create' ? (
-          <TouchableOpacity 
-            style={[s.button, s.primaryButton, loading && s.buttonDisabled]} 
-            onPress={createCar} 
-            disabled={loading}
-            activeOpacity={0.8}
-          >
-            <Text style={s.buttonText}>{loading ? 'Saving...' : '✓ Save Car'}</Text>
-          </TouchableOpacity>
-        ) : (
-          <>
+          <Animatable.View animation="bounceIn" duration={700}>
             <TouchableOpacity 
               style={[s.button, s.primaryButton, loading && s.buttonDisabled]} 
-              onPress={updateCar} 
+              onPress={createCar} 
               disabled={loading}
               activeOpacity={0.8}
             >
-              <Text style={s.buttonText}>{loading ? 'Updating...' : '✓ Update Car'}</Text>
+              <Text style={s.buttonText}>{loading ? 'Saving...' : '✓ Save Car'}</Text>
             </TouchableOpacity>
-            
-            <TouchableOpacity 
-              style={[s.button, s.deleteButton, loading && s.buttonDisabled]} 
-              onPress={deleteCar} 
-              disabled={loading}
-              activeOpacity={0.8}
-            >
-              <Text style={s.deleteButtonText}>🗑️ Delete Car</Text>
-            </TouchableOpacity>
+          </Animatable.View>
+        ) : (
+          <>
+            <Animatable.View animation="bounceIn" duration={700}>
+              <TouchableOpacity 
+                style={[s.button, s.primaryButton, loading && s.buttonDisabled]} 
+                onPress={updateCar} 
+                disabled={loading}
+                activeOpacity={0.8}
+              >
+                <Text style={s.buttonText}>{loading ? 'Updating...' : '✓ Update Car'}</Text>
+              </TouchableOpacity>
+            </Animatable.View>
+            <Animatable.View animation="bounceIn" duration={700} delay={200}>
+              <TouchableOpacity 
+                style={[s.button, s.deleteButton, loading && s.buttonDisabled]} 
+                onPress={deleteCar} 
+                disabled={loading}
+                activeOpacity={0.8}
+              >
+                <Text style={s.deleteButtonText}>🗑️ Delete Car</Text>
+              </TouchableOpacity>
+            </Animatable.View>
           </>
         )}
       </View>

@@ -1,14 +1,6 @@
 {
   "cars": [
     {
-      "id": "2",
-      "make": "Lamborghini",
-      "model": "Huracan",
-      "year": 2021,
-      "horsepower": 630,
-      "price": 274390
-    },
-    {
       "id": "3",
       "make": "Ferrari",
       "model": "488 GTB",
@@ -65,14 +57,6 @@
       "price": 81000
     },
     {
-      "id": "10",
-      "make": "Nissan",
-      "model": "GT-R Nismo",
-      "year": 2015,
-      "horsepower": 600,
-      "price": 212000
-    },
-    {
       "id": "a14e",
       "make": "Nissan",
       "model": "370Z",
@@ -87,6 +71,14 @@
       "year": 2025,
       "horsepower": 190,
       "price": 599990
+    },
+    {
+      "id": "96f2",
+      "make": "Suzuki",
+      "model": "Swift",
+      "year": 2028,
+      "horsepower": 300,
+      "price": 500555
     }
   ]
 }

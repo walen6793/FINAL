@@ -14,10 +14,10 @@ import {
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 const BASE_URL = Platform.select({
-    android: 'http://10.0.2.2:3001',
-    ios: 'http://localhost:3001',
-    web: 'http://localhost:3001',
-    default: 'http://localhost:3001',
+    android: 'http://192.168.1.110:3001',
+    ios: 'http://192.168.1.110:3001',
+    web: 'http://192.168.1.110:3001',
+    default: 'http://192.168.1.110:3001',
 });
 
 export default function CarList() {
