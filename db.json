@@ -1,0 +1,92 @@
+{
+  "cars": [
+    {
+      "id": "2",
+      "make": "Lamborghini",
+      "model": "Huracan",
+      "year": 2021,
+      "horsepower": 630,
+      "price": 274390
+    },
+    {
+      "id": "3",
+      "make": "Ferrari",
+      "model": "488 GTB",
+      "year": 2022,
+      "horsepower": 661,
+      "price": 333750
+    },
+    {
+      "id": "4",
+      "make": "Audi",
+      "model": "R8",
+      "year": 2022,
+      "horsepower": 562,
+      "price": 142700
+    },
+    {
+      "id": "5",
+      "make": "McLaren",
+      "model": "720S",
+      "year": 2021,
+      "horsepower": 710,
+      "price": 298000
+    },
+    {
+      "id": "6",
+      "make": "BMW",
+      "model": "M8",
+      "year": 2022,
+      "horsepower": 617,
+      "price": 130000
+    },
+    {
+      "id": "7",
+      "make": "Mercedes-Benz",
+      "model": "AMG GT",
+      "year": 2021,
+      "horsepower": 523,
+      "price": 118500
+    },
+    {
+      "id": "8",
+      "make": "Chevrolet",
+      "model": "Corvette",
+      "year": 2021,
+      "horsepower": 490,
+      "price": 59900
+    },
+    {
+      "id": "9",
+      "make": "Ford",
+      "model": "Mustang Shelby GT500",
+      "year": 2022,
+      "horsepower": 760,
+      "price": 81000
+    },
+    {
+      "id": "10",
+      "make": "Nissan",
+      "model": "GT-R Nismo",
+      "year": 2015,
+      "horsepower": 600,
+      "price": 212000
+    },
+    {
+      "id": "a14e",
+      "make": "Nissan",
+      "model": "370Z",
+      "year": 1990,
+      "horsepower": 560,
+      "price": 7899900
+    },
+    {
+      "id": "81d0",
+      "make": "ISUZU",
+      "model": "2024",
+      "year": 2025,
+      "horsepower": 190,
+      "price": 599990
+    }
+  ]
+}
